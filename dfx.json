@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "deFi-Bank-backend": {
+      "main": "src/deFi-Bank-backend/main.mo",
+      "type": "motoko"
+    },
+    "deFi-Bank-frontend": {
+      "dependencies": [
+        "deFi-Bank-backend"
+      ],
+      "source": [
+        "src/deFi-Bank-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "deFi-Bank-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
